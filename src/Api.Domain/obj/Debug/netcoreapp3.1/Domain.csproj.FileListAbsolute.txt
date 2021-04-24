@@ -6,4 +6,3 @@ E:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Domain\obj\Debug\netcoreapp
 E:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
 E:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.dll
 E:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.pdb
-E:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
