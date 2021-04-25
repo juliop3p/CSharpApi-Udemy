@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "uljAq9AgSz6QYQqa7d/FmsWzeOTj2bUxWfR0ibCwbDoqCn79P/NJnWNqNj+M/kfnTA91bZHHTgeUjOISphQNYA==",
+  "dgSpecHash": "PuDfHHP474SPOdGKowTWls6cigrzwCe9WVTyIjhkLt8QSqwn1jNBvr2a9cnEZPAtD8dPloBnmtoh1hc6YWf9LA==",
   "success": true,
   "projectFilePath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\julio\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.2\\microsoft.identitymodel.jsonwebtokens.6.10.2.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.2\\microsoft.identitymodel.logging.6.10.2.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.2\\microsoft.identitymodel.tokens.6.10.2.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.2\\system.identitymodel.tokens.jwt.6.10.2.nupkg.sha512",
+    "C:\\Users\\julio\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

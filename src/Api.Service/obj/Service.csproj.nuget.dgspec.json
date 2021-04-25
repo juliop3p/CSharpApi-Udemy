@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {}
+    "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {}
   },
   "projects": {
-    "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
+    "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
+        "projectUniqueName": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
+        "projectPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\obj\\",
+        "outputPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+              "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
+    "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
+        "projectUniqueName": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
+        "projectPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\obj\\",
+        "outputPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -119,6 +119,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.10.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -138,14 +144,14 @@
         }
       }
     },
-    "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {
+    "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
+        "projectUniqueName": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
+        "projectPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\obj\\",
+        "outputPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -162,11 +168,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
-                "projectPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj"
+              "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
+                "projectPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj"
               },
-              "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+              "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
               }
             }
           }
