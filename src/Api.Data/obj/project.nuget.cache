@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sxq28q8OqaF/leufUKSQvDZ2uPHOKATKIyPq37j7A8e1vGK9Exu5++6nWRZkT4KTlSSI3o8YzOPoFxghpDXwrg==",
+  "dgSpecHash": "cD6aHCZqiJntEWvNb1MIGMGvF9v4Oif9oCIteGx4x2II1X3fQbjnIVPb5VTLP+qI/v0SPEowuwzkCyQiFuttKw==",
   "success": true,
-  "projectFilePath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
+  "projectFilePath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",

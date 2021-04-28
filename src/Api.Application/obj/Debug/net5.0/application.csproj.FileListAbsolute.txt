@@ -66,3 +66,4 @@ E:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Application\obj\Debug\net5.
 E:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Application\obj\Debug\net5.0\ref\application.dll
 E:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Application\obj\Debug\net5.0\application.pdb
 E:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Application\obj\Debug\net5.0\application.genruntimeconfig.cache
+E:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Application\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

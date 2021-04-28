@@ -1503,6 +1503,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "AutoMapper": "10.1.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "Data": "1.0.0",
           "Domain": "1.0.0",
@@ -1547,6 +1548,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "AutoMapper": "10.1.1",
           "Data": "1.0.0",
           "Domain": "1.0.0"
         },
@@ -5705,11 +5707,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Application\\application.csproj",
+      "projectUniqueName": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Application\\application.csproj",
       "projectName": "application",
-      "projectPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Application\\application.csproj",
+      "projectPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Application\\application.csproj",
       "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-      "outputPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Application\\obj\\",
+      "outputPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5726,14 +5728,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-              "projectPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj"
+            "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+              "projectPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj"
             },
-            "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+            "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
             },
-            "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {
-              "projectPath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj"
+            "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {
+              "projectPath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Service\\Service.csproj"
             }
           }
         }

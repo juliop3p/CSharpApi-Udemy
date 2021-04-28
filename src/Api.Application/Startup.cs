@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Api.CrossCutting.DependencyInjection;
+using Api.CrossCutting.Mappings;
 using Api.Domain.Security;
+using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -34,6 +38,17 @@ namespace application
       ConfigureService.ConfigureDependenciesService(services);
       ConfigureRepository.ConfigureDependenciesRepository(services);
 
+      // Dependency Injection AutoMapper
+      var config = new AutoMapper.MapperConfiguration(cfg =>
+      {
+        cfg.AddProfile(new DtoToModelProfile());
+        cfg.AddProfile(new EntityToDtoProfile());
+        cfg.AddProfile(new ModelToEntityProfile());
+      });
+
+      IMapper mapper = config.CreateMapper();
+      services.AddSingleton(mapper);
+
       // Dependency Injection JWT
       var signingConfigurations = new SigningConfigurations();
       services.AddSingleton(signingConfigurations);
@@ -43,6 +58,29 @@ namespace application
         Configuration.GetSection("TokenConfigurations"))
         .Configure(tokenConfigurations);
       services.AddSingleton(tokenConfigurations);
+
+      // JWT Bearer config
+      services.AddAuthentication(authOptions =>
+      {
+        authOptions.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        authOptions.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+      }).AddJwtBearer(bearerOptions =>
+      {
+        var paramsValidation = bearerOptions.TokenValidationParameters;
+        paramsValidation.IssuerSigningKey = signingConfigurations.Key;
+        paramsValidation.ValidAudience = tokenConfigurations.Audience;
+        paramsValidation.ValidIssuer = tokenConfigurations.Issuer;
+        paramsValidation.ValidateIssuerSigningKey = true;
+        paramsValidation.ValidateLifetime = true;
+        paramsValidation.ClockSkew = TimeSpan.Zero;
+      });
+
+      services.AddAuthorization(auth =>
+      {
+        auth.AddPolicy("Bearer", new AuthorizationPolicyBuilder()
+        .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
+        .RequireAuthenticatedUser().Build());
+      });
 
 
       services.AddControllers();
@@ -64,6 +102,26 @@ namespace application
           {
             Name = "Termo de Licença de Uso",
             Url = new Uri("https://portfoliojulio.netlify.com/")
+          }
+        });
+
+        c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+        {
+          Description = "Entre com o Token JWT",
+          Name = "Authorization",
+          In = ParameterLocation.Header,
+          Type = SecuritySchemeType.ApiKey
+        });
+
+        c.AddSecurityRequirement(new OpenApiSecurityRequirement
+        {
+          {
+            new OpenApiSecurityScheme {
+              Reference = new OpenApiReference {
+                Id = "Bearer",
+                Type = ReferenceType.SecurityScheme
+              }
+            }, new List<string>()
           }
         });
       });
