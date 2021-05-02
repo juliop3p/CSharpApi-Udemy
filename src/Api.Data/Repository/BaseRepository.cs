@@ -10,52 +10,54 @@ namespace Api.Data.Repository
 {
   public class BaseRepository<T> : IRepository<T> where T : BaseEntity
   {
-      protected readonly MyContext _context;
-      private DbSet<T> _dataset;
+    protected readonly MyContext _context;
+    private DbSet<T> _dataset;
 
-      public BaseRepository(MyContext context)
-      {
-          _context = context;
-          _dataset = _context.Set<T>();
-      }
+    public BaseRepository(MyContext context)
+    {
+      _context = context;
+      _dataset = _context.Set<T>();
+    }
 
     public async Task<bool> DeleteAsync(Guid id)
     {
-        try
+      try
+      {
+        var result = await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(id));
+
+        if (result == null)
         {
-            var result = await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(id));
-            
-            if(result == null) {
-                return false;
-            }
-
-            _dataset.Remove(result);
-            await _context.SaveChangesAsync();
-
-            return true;
+          return false;
         }
-        catch (Exception ex)
-        {  
-            throw ex;
-        }
+
+        _dataset.Remove(result);
+        await _context.SaveChangesAsync();
+
+        return true;
+      }
+      catch (Exception ex)
+      {
+        throw ex;
+      }
     }
 
     public async Task<T> InsertAsync(T item)
     {
       try
       {
-          if(item.Id == Guid.Empty) {
-              item.Id = Guid.NewGuid();
-          }
+        if (item.Id == Guid.Empty)
+        {
+          item.Id = Guid.NewGuid();
+        }
 
-          item.CreatedAt = DateTime.UtcNow;
-          _dataset.Add(item);
+        item.CreateAt = DateTime.UtcNow;
+        _dataset.Add(item);
 
-          await _context.SaveChangesAsync();
+        await _context.SaveChangesAsync();
       }
-      catch(Exception ex)
+      catch (Exception ex)
       {
-          throw ex;
+        throw ex;
       }
 
       return item;
@@ -65,11 +67,11 @@ namespace Api.Data.Repository
     {
       try
       {
-          return await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(id));
+        return await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(id));
       }
       catch (Exception ex)
       {
-          throw ex;
+        throw ex;
       }
     }
 
@@ -77,40 +79,42 @@ namespace Api.Data.Repository
     {
       try
       {
-          return await _dataset.ToListAsync();
+        return await _dataset.ToListAsync();
       }
       catch (Exception ex)
       {
-          throw ex;
+        throw ex;
       }
     }
 
     public async Task<T> UpdateAsync(T item)
     {
-        try
+      try
+      {
+        var result = await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(item.Id));
+
+        if (result == null)
         {
-            var result = await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(item.Id));
-
-            if(result == null) {
-                return null;
-            }
-
-            item.UpdateAt = DateTime.UtcNow;
-            item.CreatedAt = result.CreatedAt;
-
-            _context.Entry(result).CurrentValues.SetValues(item);
-            await _context.SaveChangesAsync();
-        }
-        catch (Exception ex)
-        {
-            throw ex;
+          return null;
         }
 
-        return item;
+        item.UpdateAt = DateTime.UtcNow;
+        item.CreateAt = result.CreateAt;
+
+        _context.Entry(result).CurrentValues.SetValues(item);
+        await _context.SaveChangesAsync();
+      }
+      catch (Exception ex)
+      {
+        throw ex;
+      }
+
+      return item;
     }
 
-    public async Task<bool> ExistAsync(Guid id) {
-        return await _dataset.AnyAsync(p => p.Id.Equals(id));
+    public async Task<bool> ExistAsync(Guid id)
+    {
+      return await _dataset.AnyAsync(p => p.Id.Equals(id));
     }
   }
 }

@@ -3,18 +3,18 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Api.Domain.Entities
 {
-    public abstract class BaseEntity
+  public abstract class BaseEntity
+  {
+    [Key]
+    public Guid Id { get; set; }
+    private DateTime? _createAt;
+    public DateTime? CreateAt
     {
-        [Key]
-        public Guid Id { get; set; }
-        private DateTime? _createAt;
-        public DateTime? CreatedAt
-        {
-            get { return _createAt; }
-            set { _createAt = (value == null ? DateTime.UtcNow : value); }
-        }
-
-        public DateTime? UpdateAt { get; set; }
-        
+      get { return _createAt; }
+      set { _createAt = (value == null ? DateTime.UtcNow : value); }
     }
+
+    public DateTime? UpdateAt { get; set; }
+
+  }
 }

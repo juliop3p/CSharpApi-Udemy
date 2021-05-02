@@ -1,0 +1,14 @@
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Service.deps.json
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Service.dll
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Service.pdb
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Data.dll
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Domain.dll
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Domain.pdb
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\bin\Debug\netcoreapp3.1\Data.pdb
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csprojAssemblyReference.cache
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.dll
+e:\- Codes\C#\.NETCore 3.1\curso_api_netcore\src\Api.Service\obj\Debug\netcoreapp3.1\Service.pdb

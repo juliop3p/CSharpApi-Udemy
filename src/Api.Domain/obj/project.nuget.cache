@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c3wdB69yl046xGWDDKSgPxjwht0T8Gt5f65mOj+lYYxIxxQBxZ4+tIdYN+Pnz0XtwyquQ3etWCOSnj4+PU19hw==",
+  "dgSpecHash": "PuDfHHP474SPOdGKowTWls6cigrzwCe9WVTyIjhkLt8QSqwn1jNBvr2a9cnEZPAtD8dPloBnmtoh1hc6YWf9LA==",
   "success": true,
-  "projectFilePath": "e:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
+  "projectFilePath": "E:\\- Codes\\C#\\.NETCore 3.1\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.2\\microsoft.identitymodel.jsonwebtokens.6.10.2.nupkg.sha512",
